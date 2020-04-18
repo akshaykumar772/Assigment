@@ -1,0 +1,15 @@
+@import "../node_modules/ag-grid-community/dist/styles/ag-grid.css";
+@import "../node_modules/ag-grid-community/dist/styles/ag-theme-alpine.css";
+
+.text-center {
+    text-align: center;
+}
+.margin-top-15 {
+    margin-top: 15px !important;
+}
+.margin-bottom-15 {
+    margin-bottom: 15px;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

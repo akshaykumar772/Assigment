@@ -1,0 +1,33 @@
+<div class="formbox text-center">
+    <h2>Student Detail</h2>
+    <form action="">
+        <div class="margin-top-15">
+            <label for="rollno" style="margin-right: 7.5%;">Roll Number</label>
+            <input type="number" name="rollno" id="rollno" [(ngModel)]="studentDetails.rollno" disabled>
+        </div>
+        <div class="margin-top-15">
+            <label for="name" style="margin-right: 17%;">Name</label>
+            <input type="text" name="name" id="name" [(ngModel)] = "studentDetails.name">
+        </div>
+        <div class="margin-top-15">
+            <label for="gender" style="margin-right: 18%;">Gender</label>
+            <input type="radio" id="male" name="gender" value="Male" [(ngModel)] = "studentDetails.gender">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="Female" [(ngModel)] = "studentDetails.gender">
+            <label for="female" style="margin-right: 10%;">Female</label>
+        </div>
+        <div class="margin-top-15">
+            <label for="username" style="margin-right: 11%;">Username</label>
+            <input type="text" name="username" id="username" [(ngModel)] = "studentDetails.username" disabled>
+        </div>
+        <div class="margin-top-15">
+            <label for="address" style="margin-right: 13%;">Address</label>
+            <input type="text" name="address" id="address" [(ngModel)] = "studentDetails.address">
+        </div>
+
+        <button mat-raised-button color="primary" class="margin-top-15 margin-bottom-15"
+                name="login" id="login" (click)="saveStudentDetails()">Save</button>
+
+        <button mat-raised-button color="primary" style="margin-left:10px" routerLink="/studentsList">Back</button>
+    </form>
+</div>

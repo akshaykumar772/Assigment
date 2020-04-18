@@ -1,0 +1,13 @@
+.formbox {
+    border: 1px solid black;
+    width: 30%;
+    margin-left: 35%;
+    padding: 20px 0px 20px 0px;
+    margin-top: 10%;
+}
+.login_button {
+    padding: 5px 15px;
+}
+.margin-left-20 {
+    margin-left: 20%;
+}

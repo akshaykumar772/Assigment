@@ -1,0 +1,15 @@
+
+<h2 class="text-center">Students List</h2>
+<div style="margin-left:6%">
+    <ag-grid-angular
+        #agGrid
+        style="width: 1205px; height: 400px;"
+        class="ag-theme-alpine "
+        [rowData]="rowData"
+        [columnDefs]="columnDefs">
+    </ag-grid-angular><br>
+
+    <button mat-raised-button color="primary" (click)="editStudentDetails()">Edit</button>
+
+    <button mat-raised-button color="primary" style="margin-left:10px" (click)="deleteStudent()">Delete</button>
+</div>

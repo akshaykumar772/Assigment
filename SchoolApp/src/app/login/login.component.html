@@ -1,0 +1,19 @@
+<div class="formbox text-center">
+    <form action="" #loginForm>
+        <h2>Login</h2>
+        <div class="margin-top-15">
+            <label for="username" style="margin-right: 5%;">Username</label>
+            <input type="text" name="username" id="username" [(ngModel)] = "user.username">
+        </div>
+        <div class="margin-top-15">
+            <label for="password" style="margin-right: 5%;">Password</label>
+            <input type="password" name="password" id="password" [(ngModel)] = "user.password" >
+        </div>
+
+        <button mat-raised-button color="primary" class="margin-top-15 margin-bottom-15" name="login" id="login" 
+            (click)="authenticate()">Login</button><br><br>
+
+        <a routerLink = "/registration">Register Here</a>
+    </form>
+</div>
+    

@@ -1,0 +1,38 @@
+<div class="formbox text-center">
+    <h2>Registration</h2>
+    <form action="">
+        <div class="margin-top-15">
+            <label for="rollno" style="margin-right: 7.5%;">Roll Number</label>
+            <input type="number" name="rollno" id="rollno" [(ngModel)] = "studentDetails.rollno">
+        </div>
+        <div class="margin-top-15">
+            <label for="name" style="margin-right: 17%;">Name</label>
+            <input type="text" name="name" id="name" [(ngModel)] = "studentDetails.name">
+        </div>
+        <div class="margin-top-15">
+            <label for="gender" style="margin-right: 18%;">Gender</label>
+            <input type="radio" id="male" name="gender" value="Male" [(ngModel)] = "studentDetails.gender">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="Female" [(ngModel)] = "studentDetails.gender">
+            <label for="female" style="margin-right: 10%;">Female</label>
+        </div>
+        <div class="margin-top-15">
+            <label for="username" style="margin-right: 11%;">Username</label>
+            <input type="text" name="username" id="username" [(ngModel)] = "studentDetails.username">
+        </div>
+        <div class="margin-top-15">
+            <label for="password" style="margin-right: 11%;">Password</label>
+            <input type="password" name="password" id="password" [(ngModel)] = "studentDetails.password">
+        </div>
+        <div class="margin-top-15">
+            <label for="address" style="margin-right: 13%;">Address</label>
+            <input type="text" name="address" id="address" [(ngModel)] = "studentDetails.address">
+        </div>
+
+        <button mat-raised-button color="primary" class="margin-top-15 margin-bottom-15"
+                name="login" id="login" (click)="registerStudent()">Submit</button><br><br>
+
+        <a routerLink = "/login">Already Registered? Login Here</a>
+    </form>
+</div>
+<p class="text-center"><b>Note:</b> RollNumber and username should be unique</p>
